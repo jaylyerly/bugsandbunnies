@@ -4,7 +4,7 @@ help:
 	@echo "   make clean		Remove the public directory"
 	@echo "   make drafts		Build the public directory with drafts"
 	@echo "   make site			Build the public directory"
-	@echo "   make deply		Remove the public directory, rebuild and push to S3"
+	@echo "   make deploy		Remove the public directory, rebuild and push to S3"
 
 clean:
 	rm -rf public
