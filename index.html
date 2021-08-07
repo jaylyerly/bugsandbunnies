@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta name="generator" content="Hugo 0.54.0" />
+
+  <title>
+      
+      Jay Lyerly
+      
+  </title>
+
+</head>
+
+
+  <body>
+
+    
+
+	
+<div class="h-feed">
+
+	
+	
+      <div class="h-entry">
+		
+
+        <a href="http://bugsandbunnies.org/2021/08/04/twos-company-get.html" class="u-url"><time class="dt-published" datetime="2021-08-04 21:42:00 -0400">Aug 4, 2021</time></a>
+
+        <div class="e-content">
+         	<p>Two’s company. Get lost nerd.</p>
+
+<p><img src="uploads/2021/35869d6666.jpg" width="600" height="450" alt="" /></p>
+
+        </div>
+      </div>
+    
+      <div class="h-entry">
+		
+			<h1><a href="http://bugsandbunnies.org/2021/08/04/the-mysterious-error.html">The MYSTERIOUS Error.</a></h1>
+		
+
+        <a href="http://bugsandbunnies.org/2021/08/04/the-mysterious-error.html" class="u-url"><time class="dt-published" datetime="2021-08-04 09:24:31 -0400">Aug 4, 2021</time></a>
+
+        <div class="e-content">
+         	<p>Callisto is a Catalyst app, mostly running iOS style code on a Mac.  But there are some things that Catalyst apps can&rsquo;t do &ndash; like run a python server as another process.  But Mac apps can!</p>
+
+<p>There are a lot of instructions around the Internet about how to use AppKit code within your Catalyst app to do those Mac things that Catalyst doesn&rsquo;t cover yet.  <a href="https://www.highcaffeinecontent.com/blog/20190607-Beyond-the-Checkbox-with-Catalyst-and-AppKit">This article</a> from Steve Troughton-Smith was our guide.</p>
+
+<p>We also want to do auto-updates like a regular Mac app.  We&rsquo;re distributing outside the Mac App Store for Reasons, so we&rsquo;re in charge of our own updates.  Yep, dear reader, that means <a href="https://sparkle-project.org">Sparkle</a>, which should be fine, right?  So we get the Sparkle framework and link it in to our AppKit bundle which is a plugin for our main app.  Compile, run and 💥.  This error is staring at us from the console.</p>
+
+<pre><code>code signature in (&lt;full path redacted&gt;/Sparkle.framework/Versions/A/Sparkle) not valid for use 
+in process using Library Validation: not allowing mapping of development code into production process
+</code></pre>
+
+<p>What does <em>that</em> mean?  After some furious googling, we&rsquo;re left empty handed and confused.  The worst kind of error is that special, <em>new</em> error that no one else has ever seen.  Bollocks.</p>
+
+<p>After some futile futzing around in the dark, I give up and burn a &lsquo;code level&rsquo; support ticket with Apple.  I send a fairly detailed outline of the problem and the next morning I get back a nice response asking for more details.  In particular, how are the app and the framework code signed?  (You can check that with <code>codesign -vvvd &lt;.app or .framework&gt;</code>.)</p>
+
+<p>And immediately, I see it.</p>
+
+<p>App Signature:</p>
+
+<p><code>Authority=Developer ID Application: Oak City Labs, LLC (XXXXXXXXX)</code></p>
+
+<p>Framework Signature:</p>
+
+<p><code>Authority=Apple Development: Continuous Integration (YYYYYYYYY)</code></p>
+
+<p>The app is signed with a <em>production</em> identity while the framework is signed with a <em>development</em> identity.  That&rsquo;s what that weird error meant about <code>not allowing mapping of development code into production process</code>.  The <code>codesign</code> docs point out how frameworks and apps need to both be signed with the same Team ID (which I checked), but don&rsquo;t mention this distinction between production / development signing identities.</p>
+
+<p>I update Xcode so that the AppKit bundle was being signed with the same production identity and all is well!  We are fully Sparkle enabled!  Curiously, the AppKit bundle has always been signed with the development identity before, yet it loaded fine at runtime.  That must be one of those fine distinctions between a bundle and a framework that I don&rsquo;t quite understand.</p>
+
+<p>But now we celebrate!  🎉🎉🎉</p>
+
+        </div>
+      </div>
+    
+      <div class="h-entry">
+		
+			<h1><a href="http://bugsandbunnies.org/2021/08/04/throw-some-results.html">Throw some Results </a></h1>
+		
+
+        <a href="http://bugsandbunnies.org/2021/08/04/throw-some-results.html" class="u-url"><time class="dt-published" datetime="2021-08-04 09:24:01 -0400">Aug 4, 2021</time></a>
+
+        <div class="e-content">
+         	<p>Errors, we&rsquo;ve all got &lsquo;em.  What do we do with &lsquo;em?</p>
+
+<p>Swift has a couple of different error handling patterns.  There&rsquo;s <code>try</code> and <code>catch</code> which I always think of as kind of the nuclear option.  Something went wrong, the code blows up with a <code>throw</code> and our hero, the intrepid programmer, has to deal with it right here, right now.  And then there&rsquo;s <code>Result</code>, an elegant weapon for a more civilized age.  Call a method and get back a <code>Result</code>, then deal with it as you like &ndash; check for the value, handle the error or maybe even ignore it altogether.  Depending on your situation, one of these is likely to suit better than the other.</p>
+
+<p>But sometimes the situation changes.  Maybe you wrote some code that should obviously <code>throw</code>(or calls some library code that <code>throws</code>), but it would really make a lot more sense to return a <code>Result</code>.  As it turns out, it&rsquo;s really easy to convert between <code>try</code>/<code>catch</code> and a <code>Result</code> type.</p>
+
+<p>Imagine you have some code that can <code>throw</code>.  Maybe even it always throws, because it is a <code>badIdea()</code>.  But you need to have a <code>Result</code> instance instead.  The <code>Result</code> type has an initializer that handles this perfectly.  You hand it a closure that returns the <code>Success</code> type for the <code>Result</code> and any error thrown by the closure is used for the <code>Failure</code> case.  Basically, they&rsquo;ve wrapped up all the boilerplate in this initializer, and you get a very concise way to convert <code>try</code> into a <code>Result</code>.</p>
+
+<pre><code class="language-swift">enum HorrendousError: Error {
+    case veryBad
+}
+
+func badIdea() throws -&gt; String {
+    throw HorrendousError.veryBad
+}
+
+let result = Result&lt;String, Error&gt; { try badIdea() }
+
+</code></pre>
+
+<p>The full signature of that initializer is <code>Result.init(catching: () -&gt; Success)</code>.  The single argument is a closure returns the <code>Success</code> type &ndash; here that&rsquo;s a <code>String</code>.  If the closure throws, then that gets wrapped up as the <code>.failure</code> case.</p>
+
+<p>How about doing the reverse?  You&rsquo;ve got a result type, but you&rsquo;d rather access the value in a <code>try</code> / <code>catch</code> sort of way.  The <code>Result</code> type itself has a accessor method for just such an occasion!</p>
+
+<pre><code class="language-swift">let value = try someResult.get()
+</code></pre>
+
+<p>If the <code>Result</code> type is the <code>.success</code> case, it just returns the successful value.  If <code>someResult</code> is a <code>.failure</code> case, the <code>get()</code> method will <code>throw</code>.  This is especially useful if you want to access the result and ignore any errors:</p>
+
+<pre><code class="language-swift">let optionalValue = try? someResult.get()
+</code></pre>
+
+<p>This is also handy in testing when you expect a <code>Result</code> type to be successful.  Use the <code>get()</code> method to access the value and let <code>XCTest</code>&rsquo;s support for tests that <code>throw</code> to handle the error cases.  This can make tests shorter and easier to read too.</p>
+
+<p>For me, discovering the interchangeable nature of <code>try</code>/<code>catch</code> and the <code>Result</code> type was a bit of an &lsquo;aha!&rsquo; moment.  You&rsquo;re not locked in to on type of error handling or another.  With these convenient converters, you can fluidly move from one type to another as needed.  And without a lot of boilerplate code for the conversions!</p>
+
+        </div>
+      </div>
+    
+
+</div>
+
+
+    
+    
+
+  </body>
+
+</html>
