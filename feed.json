@@ -7,6 +7,30 @@
 	"items": [
 		
 			{
+				"id": "http://jaylyerly.micro.blog/2022/08/19/on-the-occasion.html",
+				
+				"content_html": "<p>On the occasion of a blind squirrel finding a nut.</p>\n\n<blockquote>\n<p>Wordle 426 2/6</p>\n</blockquote>\n\n<p>⬜🟩⬜🟨⬜\n🟩🟩🟩🟩🟩</p>\n",
+				"content_text": "On the occasion of a blind squirrel finding a nut. \n\n> Wordle 426 2/6\n\n⬜🟩⬜🟨⬜\n🟩🟩🟩🟩🟩\n",
+				"date_published": "2022-08-19T09:29:46-04:00",
+				"url": "https://www.bugsandbunnies.org/2022/08/19/on-the-occasion.html"
+			},
+			{
+				"id": "http://jaylyerly.micro.blog/2022/08/12/sponge-worthy.html",
+				"title": "Sponge worthy?",
+				"content_html": "<p>My favorite new unix too is definitely <code>sponge</code>.  It&rsquo;s from the <a href=\"https://joeyh.name/code/moreutils/\">moreutils</a> suite, but the easiest way to get it on your Mac is a quick <code>brew install sponge</code>.</p>\n\n<p>You know how <code>sed</code> can edit a file in place?  Dope, right?  <code>sponge</code> makes it easy to do that with <em>all</em> the regular unix tools.  If I want to fix a DOS text file by removing the carriage return, I always try doing</p>\n\n<pre><code>cat my_file.txt | tr -d &quot;\\r&quot; &gt; my_file.txt\n</code></pre>\n\n<p>But that doesn&rsquo;t work because it starts writing to the file before it&rsquo;s all read and a lot of times, the file ends up empty.  <code>sponge</code> to the rescue!</p>\n\n<pre><code>cat my_file.txt | tr -d &quot;\\r&quot; | sponge my_file.txt\n</code></pre>\n\n<p><code>sponge</code> will read everything from standard in and then write it out to the given file, so this works like you want it to, even for big files.</p>\n\n<p>Also great with <a href=\"https://stedolan.github.io/jq/\"><code>jq</code></a> for prettifying JSON files in place too.</p>\n",
+				"content_text": "My favorite new unix too is definitely `sponge`.  It's from the [moreutils](https://joeyh.name/code/moreutils/) suite, but the easiest way to get it on your Mac is a quick `brew install sponge`.\n\nYou know how `sed` can edit a file in place?  Dope, right?  `sponge` makes it easy to do that with _all_ the regular unix tools.  If I want to fix a DOS text file by removing the carriage return, I always try doing\n\n```\ncat my_file.txt | tr -d \"\\r\" > my_file.txt\n```\n\nBut that doesn't work because it starts writing to the file before it's all read and a lot of times, the file ends up empty.  `sponge` to the rescue!\n\n\n```\ncat my_file.txt | tr -d \"\\r\" | sponge my_file.txt\n```\n\n`sponge` will read everything from standard in and then write it out to the given file, so this works like you want it to, even for big files.\n\nAlso great with [`jq`](https://stedolan.github.io/jq/) for prettifying JSON files in place too.\n",
+				"date_published": "2022-08-12T11:27:03-04:00",
+				"url": "https://www.bugsandbunnies.org/2022/08/12/sponge-worthy.html"
+			},
+			{
+				"id": "http://jaylyerly.micro.blog/2022/08/10/three-habits.html",
+				"title": "Three Habits",
+				"content_html": "<p><em>The three hardest habits to break are heroin, carbs and a steady paycheck.\n</em></p>\n\n<p><em>&ndash; Nassim Nicholas Taleb (paraphrased)</em></p>\n",
+				"content_text": "<em>The three hardest habits to break are heroin, carbs and a steady paycheck. \n</em>\n\n<em>-- Nassim Nicholas Taleb (paraphrased)</em>\n",
+				"date_published": "2022-08-10T15:03:08-04:00",
+				"url": "https://www.bugsandbunnies.org/2022/08/10/three-habits.html"
+			},
+			{
 				"id": "http://jaylyerly.micro.blog/2022/08/08/illinois-tech-spinout.html",
 				"title": "Illinois Tech ‘spinout’ startup Influit Energ | EurekAlert!",
 				"content_html": "<p>A research group out of Chicago has developed &ldquo;liquid batteries&rdquo;.  I have no idea how the chemistry of this works, but it sounds like you could refuel an electric car a lot like you&rsquo;d gas up an ICE car, and in a similar amount of time.  And about a billion other applications.</p>\n\n<p><a href=\"https://www.eurekalert.org/news-releases/961148\">Illinois Tech ‘spinout’ startup Influit Energ | EurekAlert!</a>:</p>\n\n<blockquote>The unique high-energy density liquid format of the NEF flow batteries allows use of the same fluids in different devices, meaning fluid, charged at the recharging station from renewable energy sources or a grid, can be used to rapidly refuel vehicles, or for stationary storage and other large portable applications,” Timofeeva says. “Discharged fluid can be returned to a recharge/refuel station for recharging or be charged inside the device by plugging into the power source.</blockquote>\n",
