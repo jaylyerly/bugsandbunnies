@@ -24,6 +24,67 @@
 	
 	  <div class="h-entry">
 		
+
+		<a href="https://www.bugsandbunnies.org/2022/08/19/on-the-occasion.html" class="u-url"><time class="dt-published" datetime="2022-08-19 09:29:46 -0400">Aug 19, 2022</time></a>
+
+		<div class="e-content">
+			 <p>On the occasion of a blind squirrel finding a nut.</p>
+
+<blockquote>
+<p>Wordle 426 2/6</p>
+</blockquote>
+
+<p>⬜🟩⬜🟨⬜
+🟩🟩🟩🟩🟩</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://www.bugsandbunnies.org/2022/08/12/sponge-worthy.html">Sponge worthy?</a></h1>
+		
+
+		<a href="https://www.bugsandbunnies.org/2022/08/12/sponge-worthy.html" class="u-url"><time class="dt-published" datetime="2022-08-12 11:27:03 -0400">Aug 12, 2022</time></a>
+
+		<div class="e-content">
+			 <p>My favorite new unix too is definitely <code>sponge</code>.  It&rsquo;s from the <a href="https://joeyh.name/code/moreutils/">moreutils</a> suite, but the easiest way to get it on your Mac is a quick <code>brew install sponge</code>.</p>
+
+<p>You know how <code>sed</code> can edit a file in place?  Dope, right?  <code>sponge</code> makes it easy to do that with <em>all</em> the regular unix tools.  If I want to fix a DOS text file by removing the carriage return, I always try doing</p>
+
+<pre><code>cat my_file.txt | tr -d &quot;\r&quot; &gt; my_file.txt
+</code></pre>
+
+<p>But that doesn&rsquo;t work because it starts writing to the file before it&rsquo;s all read and a lot of times, the file ends up empty.  <code>sponge</code> to the rescue!</p>
+
+<pre><code>cat my_file.txt | tr -d &quot;\r&quot; | sponge my_file.txt
+</code></pre>
+
+<p><code>sponge</code> will read everything from standard in and then write it out to the given file, so this works like you want it to, even for big files.</p>
+
+<p>Also great with <a href="https://stedolan.github.io/jq/"><code>jq</code></a> for prettifying JSON files in place too.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://www.bugsandbunnies.org/2022/08/10/three-habits.html">Three Habits</a></h1>
+		
+
+		<a href="https://www.bugsandbunnies.org/2022/08/10/three-habits.html" class="u-url"><time class="dt-published" datetime="2022-08-10 15:03:08 -0400">Aug 10, 2022</time></a>
+
+		<div class="e-content">
+			 <p><em>The three hardest habits to break are heroin, carbs and a steady paycheck.
+</em></p>
+
+<p><em>&ndash; Nassim Nicholas Taleb (paraphrased)</em></p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
 			<h1><a href="https://www.bugsandbunnies.org/2022/08/08/illinois-tech-spinout.html">Illinois Tech ‘spinout’ startup Influit Energ | EurekAlert!</a></h1>
 		
 
