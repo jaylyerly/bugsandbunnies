@@ -7,6 +7,22 @@
 	"items": [
 		
 			{
+				"id": "http://jaylyerly.micro.blog/2023/01/07/philosophical-dragon.html",
+				
+				"content_html": "<p>Philosophical Dragon</p>\n\n<p><img src=\"uploads/2023/55d522ccb0.jpg\" width=\"450\" height=\"600\" alt=\"\"></p>\n",
+				"content_text": "Philosophical Dragon \n\n<img src=\"uploads/2023/55d522ccb0.jpg\" width=\"450\" height=\"600\" alt=\"\">\n",
+				"date_published": "2023-01-07T14:10:31-05:00",
+				"url": "https://www.bugsandbunnies.org/2023/01/07/philosophical-dragon.html"
+			},
+			{
+				"id": "http://jaylyerly.micro.blog/2023/01/04/marsedit.html",
+				"title": "MarsEdit 5",
+				"content_html": "<p>Tried to pay for an upgrade to MarsEdit 5 this morning, but it wouldn&rsquo;t let me.  The web store said I had purchased MarsEdit 4 too recently, and it gave me a free upgraded to version 5.  Nice!</p>\n",
+				"content_text": "Tried to pay for an upgrade to MarsEdit 5 this morning, but it wouldn't let me.  The web store said I had purchased MarsEdit 4 too recently, and it gave me a free upgraded to version 5.  Nice! \n",
+				"date_published": "2023-01-04T10:12:52-05:00",
+				"url": "https://www.bugsandbunnies.org/2023/01/04/marsedit.html"
+			},
+			{
 				"id": "http://jaylyerly.micro.blog/2022/11/27/greg-garcias-sprung.html",
 				
 				"content_html": "<p>Greg Garcia’s Sprung on Amazon Prime Video is quite good. He’s the creator behind My Name is Earl and Raising Hope. If you liked those, Sprung will be right up your alley. Some familiar faces too. So good.</p>\n",
