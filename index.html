@@ -6,7 +6,7 @@
 
   <title>
       
-      Jay Lyerly
+      Bugs and Bunnies -- Jay Lyerly
       
   </title>
 
@@ -24,19 +24,35 @@
 	
 	  <div class="h-entry">
 		
+
+		<a href="https://www.bugsandbunnies.org/2023/05/09/about-final-cut.html" class="u-url"><time class="dt-published" datetime="2023-05-09 11:17:43 -0400">May 9, 2023</time></a>
+
+		<div class="e-content">
+			 <p>About Final Cut for iPad&hellip; so many MacRumors commenters are writing it off because it&rsquo;s a subscription - $5/mth or $50/yr. But Mac FCP is $300! So the part where Apple &ldquo;wins” on this is at 6 yeas. If FCP is so good that you&rsquo;re still using it in 6 years, then they totally deserve the money. It also means dabblers like me can pay $10 a year and do the two little hobby projects that come up where multi-cam would be handy. I can only imagine the fury if Apple had dropped a one-time $300 iPad app.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
 			<h1><a href="https://www.bugsandbunnies.org/2023/04/24/better-app-launching.html">Better App Launching with SwiftUI for Unit Tests</a></h1>
 		
 
-		<a href="https://www.bugsandbunnies.org/2023/04/24/better-app-launching.html" class="u-url"><time class="dt-published" datetime="2023-04-24 12:56:15 -0500">Apr 24, 2023</time></a>
+		<a href="https://www.bugsandbunnies.org/2023/04/24/better-app-launching.html" class="u-url"><time class="dt-published" datetime="2023-04-24 13:56:15 -0400">Apr 24, 2023</time></a>
 
 		<div class="e-content">
-			 <p>For unit testing, test coverage is an important metric.  How much of your code base are you exercising during unit tests?  Xcode is, unfortunately, not too bright when it comes to measuring coverage.  It doesn&rsquo;t have the intelligence to know if you&rsquo;re &ldquo;testing&rdquo; a line of code, just that the line of code was executed.  This is a problem right off the bat.</p>
+			 <pre>
+TL;DR -- In SwiftUI, use a fake testing `App` instead of your real `App` 
+to make sure you're actually testing your code. 
+</pre>
+
+<p>For unit testing, test coverage is an important metric.  How much of your code base are you exercising during unit tests?  Xcode is, unfortunately, not too bright when it comes to measuring coverage.  It doesn&rsquo;t have the intelligence to know if you&rsquo;re &ldquo;testing&rdquo; a line of code, just that the line of code was executed.  This is a problem right off the bat.</p>
 
 <p>I&rsquo;ve got a new app project in Xcode.  The app does a little and I want to start adding tests before it gets too big.  So I add a unit test target and Xcode plops in some empty tests.  I run the unit tests, and they all pass since they&rsquo;re empty.  I check the coverage and it&rsquo;s at 36%!  How can that be, I didn&rsquo;t test <em>anything</em>?</p>
 
 <p>Xcode, the blissful idiot, is really reporting that 36% of the code was executed while running the unit tests.  Usually, when an app starts up, it does some bootstrapping.  You might set up your persistent storage, draw a couple of Views on screen, and maybe talk to the network.  Xcode counts all that as &ldquo;testing&rdquo; because it ran during a unit test.</p>
 
-<p>To make the test coverage more accurate, we need to do as little as possible outside of our actual unit tests.  John Reid <a href="https://qualitycoding.org/ios-app-delegate-testing/">has a write-up</a> of how to do this with a UIKit app by swapping out the app delegate during tests.  But SwiftUI introduces a whole new startup sequence so we need a new approach for SwiftUI&rsquo;s new app lifecycle.</p>
+<p>To make the test coverage more accurate, we need to do as little as possible outside of our actual unit tests.  Jon Reid <a href="https://qualitycoding.org/ios-app-delegate-testing/">has a write-up</a> of how to do this with a UIKit app by swapping out the app delegate during tests.  But SwiftUI introduces a whole new startup sequence so we need a new approach for SwiftUI&rsquo;s new app lifecycle.</p>
 
 <p>After some futzing around, turns out it&rsquo;s easy!</p>
 
@@ -76,7 +92,7 @@ struct TestDriver {
 	  <div class="h-entry">
 		
 
-		<a href="https://www.bugsandbunnies.org/2023/04/18/life-uh-finds.html" class="u-url"><time class="dt-published" datetime="2023-04-18 08:46:16 -0500">Apr 18, 2023</time></a>
+		<a href="https://www.bugsandbunnies.org/2023/04/18/life-uh-finds.html" class="u-url"><time class="dt-published" datetime="2023-04-18 09:46:16 -0400">Apr 18, 2023</time></a>
 
 		<div class="e-content">
 			 <p><em>Life, uh… finds a way
@@ -89,7 +105,7 @@ struct TestDriver {
 	  <div class="h-entry">
 		
 
-		<a href="https://www.bugsandbunnies.org/2023/04/14/hey-no-cameras.html" class="u-url"><time class="dt-published" datetime="2023-04-14 09:41:31 -0500">Apr 14, 2023</time></a>
+		<a href="https://www.bugsandbunnies.org/2023/04/14/hey-no-cameras.html" class="u-url"><time class="dt-published" datetime="2023-04-14 10:41:31 -0400">Apr 14, 2023</time></a>
 
 		<div class="e-content">
 			 <p>Hey!  No cameras! #BunnyButtFriday #RabbitsOfMastodon</p>
@@ -104,7 +120,7 @@ struct TestDriver {
 			<h1><a href="https://www.bugsandbunnies.org/2023/04/12/unit-testing-with.html">Unit testing with UIDocumentPickerViewController -- An Un-Googlable Bug</a></h1>
 		
 
-		<a href="https://www.bugsandbunnies.org/2023/04/12/unit-testing-with.html" class="u-url"><time class="dt-published" datetime="2023-04-12 10:04:29 -0500">Apr 12, 2023</time></a>
+		<a href="https://www.bugsandbunnies.org/2023/04/12/unit-testing-with.html" class="u-url"><time class="dt-published" datetime="2023-04-12 11:04:29 -0400">Apr 12, 2023</time></a>
 
 		<div class="e-content">
 			 <p>TLDR &ndash; If your unit tests crash with <code>DocumentManager service tried to send a message to a deallocated host proxy</code>, make sure you&rsquo;re dismissing any presented instance of UIDocumentPickerViewController.</p>
@@ -137,7 +153,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 	  <div class="h-entry">
 		
 
-		<a href="https://www.bugsandbunnies.org/2023/04/11/excuse-me-waiter.html" class="u-url"><time class="dt-published" datetime="2023-04-11 13:33:56 -0500">Apr 11, 2023</time></a>
+		<a href="https://www.bugsandbunnies.org/2023/04/11/excuse-me-waiter.html" class="u-url"><time class="dt-published" datetime="2023-04-11 14:33:56 -0400">Apr 11, 2023</time></a>
 
 		<div class="e-content">
 			 <p>Excuse me waiter, there&rsquo;s a bit of hay in my water.  #RabbitsOfMastodon</p>
@@ -150,7 +166,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 	  <div class="h-entry">
 		
 
-		<a href="https://www.bugsandbunnies.org/2023/01/07/philosophical-dragon.html" class="u-url"><time class="dt-published" datetime="2023-01-07 14:10:31 -0500">Jan 7, 2023</time></a>
+		<a href="https://www.bugsandbunnies.org/2023/01/07/philosophical-dragon.html" class="u-url"><time class="dt-published" datetime="2023-01-07 15:10:31 -0400">Jan 7, 2023</time></a>
 
 		<div class="e-content">
 			 <p>Philosophical Dragon</p>
@@ -165,7 +181,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 			<h1><a href="https://www.bugsandbunnies.org/2023/01/04/marsedit.html">MarsEdit 5</a></h1>
 		
 
-		<a href="https://www.bugsandbunnies.org/2023/01/04/marsedit.html" class="u-url"><time class="dt-published" datetime="2023-01-04 10:12:52 -0500">Jan 4, 2023</time></a>
+		<a href="https://www.bugsandbunnies.org/2023/01/04/marsedit.html" class="u-url"><time class="dt-published" datetime="2023-01-04 11:12:52 -0400">Jan 4, 2023</time></a>
 
 		<div class="e-content">
 			 <p>Tried to pay for an upgrade to MarsEdit 5 this morning, but it wouldn&rsquo;t let me.  The web store said I had purchased MarsEdit 4 too recently, and it gave me a free upgraded to version 5.  Nice!</p>
@@ -176,7 +192,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 	  <div class="h-entry">
 		
 
-		<a href="https://www.bugsandbunnies.org/2022/11/27/greg-garcias-sprung.html" class="u-url"><time class="dt-published" datetime="2022-11-27 14:32:18 -0500">Nov 27, 2022</time></a>
+		<a href="https://www.bugsandbunnies.org/2022/11/27/greg-garcias-sprung.html" class="u-url"><time class="dt-published" datetime="2022-11-27 15:32:18 -0400">Nov 27, 2022</time></a>
 
 		<div class="e-content">
 			 <p>Greg Garcia’s Sprung on Amazon Prime Video is quite good. He’s the creator behind My Name is Earl and Raising Hope. If you liked those, Sprung will be right up your alley. Some familiar faces too. So good.</p>
@@ -187,7 +203,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 	  <div class="h-entry">
 		
 
-		<a href="https://www.bugsandbunnies.org/2022/09/11/the-thinking-brick.html" class="u-url"><time class="dt-published" datetime="2022-09-11 19:00:12 -0500">Sep 11, 2022</time></a>
+		<a href="https://www.bugsandbunnies.org/2022/09/11/the-thinking-brick.html" class="u-url"><time class="dt-published" datetime="2022-09-11 20:00:12 -0400">Sep 11, 2022</time></a>
 
 		<div class="e-content">
 			 <p>The Thinking Brick</p>
@@ -202,7 +218,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 			<h1><a href="https://www.bugsandbunnies.org/2022/09/09/a-new-watch.html">A New Watch!</a></h1>
 		
 
-		<a href="https://www.bugsandbunnies.org/2022/09/09/a-new-watch.html" class="u-url"><time class="dt-published" datetime="2022-09-09 08:05:01 -0500">Sep 9, 2022</time></a>
+		<a href="https://www.bugsandbunnies.org/2022/09/09/a-new-watch.html" class="u-url"><time class="dt-published" datetime="2022-09-09 09:05:01 -0400">Sep 9, 2022</time></a>
 
 		<div class="e-content">
 			 <p>I took the plunge and ordered a new <a href="https://www.apple.com/apple-watch-ultra/">Ultra</a> Apple Watch sight unseen.  I&rsquo;m very excited for a new wrist computer, especially with a big orange button!  Seems weird though that there&rsquo;s no <em>titanium</em> watch band to dress it up.  I guess Apple is going full tilt on the outdoor adventure lifestyle to start.  The fancy matching titanium band will probably show up in the spring.</p>
@@ -217,7 +233,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 			<h1><a href="https://www.bugsandbunnies.org/2022/08/19/holy-shift-koenigseggs.html">Holy Shift! Koenigsegg’s New Transmission Is a 6-Speed Manual *and* a 9-Speed Automatic</a></h1>
 		
 
-		<a href="https://www.bugsandbunnies.org/2022/08/19/holy-shift-koenigseggs.html" class="u-url"><time class="dt-published" datetime="2022-08-19 13:30:07 -0500">Aug 19, 2022</time></a>
+		<a href="https://www.bugsandbunnies.org/2022/08/19/holy-shift-koenigseggs.html" class="u-url"><time class="dt-published" datetime="2022-08-19 14:30:07 -0400">Aug 19, 2022</time></a>
 
 		<div class="e-content">
 			 <p>I always wondered if someone would build a clutch-by-wire system like this where there&rsquo;s a gear shift and a clutch, but not physically linked to the drivetrain.  This Koenigsegg gearbox sounds like just the thing.  The problem now is that we&rsquo;re all switching to gear-less electric motors, so will this come to electrics too?  Make &lsquo;em feel like a Miata?  I guess Dodge is going to try with the <a href="https://electrek.co/2022/08/17/dodge-shows-banshee-electric-charger-concept-an-ev-with-exhaust/">eRupt</a>.</p>
@@ -234,7 +250,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 			<h1><a href="https://www.bugsandbunnies.org/2022/08/19/on-the-occasion.html">Serendipity </a></h1>
 		
 
-		<a href="https://www.bugsandbunnies.org/2022/08/19/on-the-occasion.html" class="u-url"><time class="dt-published" datetime="2022-08-19 08:29:46 -0500">Aug 19, 2022</time></a>
+		<a href="https://www.bugsandbunnies.org/2022/08/19/on-the-occasion.html" class="u-url"><time class="dt-published" datetime="2022-08-19 09:29:46 -0400">Aug 19, 2022</time></a>
 
 		<div class="e-content">
 			 <p>On the occasion of a blind squirrel finding a nut.</p>
@@ -253,7 +269,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 			<h1><a href="https://www.bugsandbunnies.org/2022/08/12/sponge-worthy.html">Sponge worthy?</a></h1>
 		
 
-		<a href="https://www.bugsandbunnies.org/2022/08/12/sponge-worthy.html" class="u-url"><time class="dt-published" datetime="2022-08-12 10:27:03 -0500">Aug 12, 2022</time></a>
+		<a href="https://www.bugsandbunnies.org/2022/08/12/sponge-worthy.html" class="u-url"><time class="dt-published" datetime="2022-08-12 11:27:03 -0400">Aug 12, 2022</time></a>
 
 		<div class="e-content">
 			 <p>My favorite new unix too is definitely <code>sponge</code>.  It&rsquo;s from the <a href="https://joeyh.name/code/moreutils/">moreutils</a> suite, but the easiest way to get it on your Mac is a quick <code>brew install sponge</code>.</p>
@@ -280,7 +296,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 			<h1><a href="https://www.bugsandbunnies.org/2022/08/10/three-habits.html">Three Habits</a></h1>
 		
 
-		<a href="https://www.bugsandbunnies.org/2022/08/10/three-habits.html" class="u-url"><time class="dt-published" datetime="2022-08-10 14:03:08 -0500">Aug 10, 2022</time></a>
+		<a href="https://www.bugsandbunnies.org/2022/08/10/three-habits.html" class="u-url"><time class="dt-published" datetime="2022-08-10 15:03:08 -0400">Aug 10, 2022</time></a>
 
 		<div class="e-content">
 			 <p><em>The three hardest habits to break are heroin, carbs and a steady paycheck.
@@ -296,7 +312,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 			<h1><a href="https://www.bugsandbunnies.org/2022/08/08/illinois-tech-spinout.html">Illinois Tech ‘spinout’ startup Influit Energ | EurekAlert!</a></h1>
 		
 
-		<a href="https://www.bugsandbunnies.org/2022/08/08/illinois-tech-spinout.html" class="u-url"><time class="dt-published" datetime="2022-08-08 08:34:15 -0500">Aug 8, 2022</time></a>
+		<a href="https://www.bugsandbunnies.org/2022/08/08/illinois-tech-spinout.html" class="u-url"><time class="dt-published" datetime="2022-08-08 09:34:15 -0400">Aug 8, 2022</time></a>
 
 		<div class="e-content">
 			 <p>A research group out of Chicago has developed &ldquo;liquid batteries&rdquo;.  I have no idea how the chemistry of this works, but it sounds like you could refuel an electric car a lot like you&rsquo;d gas up an ICE car, and in a similar amount of time.  And about a billion other applications.</p>
@@ -313,7 +329,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 			<h1><a href="https://www.bugsandbunnies.org/2022/08/04/muppet-songs-ernie.html">Muppet Songs: Ernie - Rubber Duckie - YouTube</a></h1>
 		
 
-		<a href="https://www.bugsandbunnies.org/2022/08/04/muppet-songs-ernie.html" class="u-url"><time class="dt-published" datetime="2022-08-04 10:27:46 -0500">Aug 4, 2022</time></a>
+		<a href="https://www.bugsandbunnies.org/2022/08/04/muppet-songs-ernie.html" class="u-url"><time class="dt-published" datetime="2022-08-04 11:27:46 -0400">Aug 4, 2022</time></a>
 
 		<div class="e-content">
 			 <p>Today&rsquo;s earworm&hellip;</p>
@@ -330,7 +346,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 			<h1><a href="https://www.bugsandbunnies.org/2022/08/03/daring-fireball-whats.html">Daring Fireball: &#39;What&#39;s the Deal With Water Bottles?&#39;</a></h1>
 		
 
-		<a href="https://www.bugsandbunnies.org/2022/08/03/daring-fireball-whats.html" class="u-url"><time class="dt-published" datetime="2022-08-03 08:48:52 -0500">Aug 3, 2022</time></a>
+		<a href="https://www.bugsandbunnies.org/2022/08/03/daring-fireball-whats.html" class="u-url"><time class="dt-published" datetime="2022-08-03 09:48:52 -0400">Aug 3, 2022</time></a>
 
 		<div class="e-content">
 			 <p>From the New Yorker via DF, a delightful survey of comics and their water bottles.  As a kid with cable, I watched a lot of standup, so I found this extremely interesting.  And the presentation is <em>molto bene</em> &ndash; the animated magazine version of the web.</p>
@@ -345,7 +361,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 			<h1><a href="https://www.bugsandbunnies.org/2022/08/01/tricorders.html">Tricorders</a></h1>
 		
 
-		<a href="https://www.bugsandbunnies.org/2022/08/01/tricorders.html" class="u-url"><time class="dt-published" datetime="2022-08-01 15:07:19 -0500">Aug 1, 2022</time></a>
+		<a href="https://www.bugsandbunnies.org/2022/08/01/tricorders.html" class="u-url"><time class="dt-published" datetime="2022-08-01 16:07:19 -0400">Aug 1, 2022</time></a>
 
 		<div class="e-content">
 			 <p>When I was a kid, I expected my tricorder would look like this</p>
@@ -366,7 +382,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 	  <div class="h-entry">
 		
 
-		<a href="https://www.bugsandbunnies.org/2021/08/04/twos-company-get.html" class="u-url"><time class="dt-published" datetime="2021-08-04 20:42:00 -0500">Aug 4, 2021</time></a>
+		<a href="https://www.bugsandbunnies.org/2021/08/04/twos-company-get.html" class="u-url"><time class="dt-published" datetime="2021-08-04 21:42:00 -0400">Aug 4, 2021</time></a>
 
 		<div class="e-content">
 			 <p>Two’s company. Get lost nerd.</p>
@@ -381,7 +397,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 			<h1><a href="https://www.bugsandbunnies.org/2021/08/04/the-mysterious-error.html">The MYSTERIOUS Error.</a></h1>
 		
 
-		<a href="https://www.bugsandbunnies.org/2021/08/04/the-mysterious-error.html" class="u-url"><time class="dt-published" datetime="2021-08-04 08:24:31 -0500">Aug 4, 2021</time></a>
+		<a href="https://www.bugsandbunnies.org/2021/08/04/the-mysterious-error.html" class="u-url"><time class="dt-published" datetime="2021-08-04 09:24:31 -0400">Aug 4, 2021</time></a>
 
 		<div class="e-content">
 			 <p>Callisto is a Catalyst app, mostly running iOS style code on a Mac.  But there are some things that Catalyst apps can&rsquo;t do &ndash; like run a python server as another process.  But Mac apps can!</p>
@@ -422,7 +438,7 @@ in process using Library Validation: not allowing mapping of development code in
 			<h1><a href="https://www.bugsandbunnies.org/2021/08/04/throw-some-results.html">Throw some Results </a></h1>
 		
 
-		<a href="https://www.bugsandbunnies.org/2021/08/04/throw-some-results.html" class="u-url"><time class="dt-published" datetime="2021-08-04 08:24:01 -0500">Aug 4, 2021</time></a>
+		<a href="https://www.bugsandbunnies.org/2021/08/04/throw-some-results.html" class="u-url"><time class="dt-published" datetime="2021-08-04 09:24:01 -0400">Aug 4, 2021</time></a>
 
 		<div class="e-content">
 			 <p>Errors, we&rsquo;ve all got &lsquo;em.  What do we do with &lsquo;em?</p>
@@ -472,8 +488,10 @@ let result = Result&lt;String, Error&gt; { try badIdea() }
     <footer class="footer">
   <div class="footer__inner">
     <div class="copyright">
-      <center>
-        <a rel="me" href="https://mastodon.social/@jaylyerly">Follow on Mastodon</a>
+     <center>
+
+        <a rel="me" href="https://mastodon.social/@jaylyerly"><i class="fa-brands fa-mastodon"></i> Follow on Mastodon</a>
+
       </center>
     </div>
   </div>
