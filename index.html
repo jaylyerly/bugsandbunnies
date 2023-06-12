@@ -24,6 +24,89 @@
 	
 	  <div class="h-entry">
 		
+			<h1><a href="https://www.bugsandbunnies.org/2023/06/12/callisto-jupyter-and.html">Callisto, Jupyter and Mac Optimized Machine Learning </a></h1>
+		
+
+		<a href="https://www.bugsandbunnies.org/2023/06/12/callisto-jupyter-and.html" class="u-url"><time class="dt-published" datetime="2023-06-12 16:16:54 -0400">Jun 12, 2023</time></a>
+
+		<div class="e-content">
+			 <p>We build <a href="https://www.callistoapp.com">Callisto</a> with the mindset that <a href="https://www.callistoapp.com">Callisto</a> is the best way to do data science on a Mac.  A part of that is to helping users get the most out of their Mac hardware by using computational libraries optimized for Apple Silicon chips.  <a href="https://www.tensorflow.org">TensorFlow</a> is a very popular library for machine learning, so let&rsquo;s take a look and see what it takes to use an M1 optimized version of TensorFlow with a Jupyter notebook in Callisto.</p>
+
+<p>TensorFlow has a feature called <a href="https://blog.tensorflow.org/2021/06/pluggabledevice-device-plugins-for-TensorFlow.html">PluggableDevice</a> which let&rsquo;s developers create plugins for different pieces of ML hardware.  Conveniently for us, Apple has written a <a href="https://developer.apple.com/metal/tensorflow-plugin/">plugin for Metal</a> which is <em>heavily</em> optimized for Apple Silicon devices like the M1 and M2 chips.  Now we just have to get it installed.</p>
+
+<p>You <em>should</em> be able to just install the TensorFlow library for the Mac and then the PluggableDevice for Metal, which you&rsquo;d do with these commands:</p>
+
+<pre><code>pip install tensorflow-macos
+pip install tensorflow-metal
+</code></pre>
+
+<p>With Callisto, you can use our fancy package manager interface and install <code>tensorflow-macos</code> and <code>tensorflow-metal</code>.  Unfortunately, other package dependencies mean that pip won&rsquo;t install the latest <code>tensorflow-macos</code>, version 2.12.0, but instead, fails back one version to 2.11.0.  On the other hand, pip will install the latest version of <code>tensorflow-metal</code> but the PluggableDevice interface is a C API and is tightly bound to the version.  While these modules installed, at runtime there&rsquo;s a symbol mismatch error and the Metal plugin fails to load.</p>
+
+<p>Cue montage of trying to install several permutations of these two packages.</p>
+
+<p>To jump to the end, as suggested in this <a href="https://developer.apple.com/forums/thread/722361">post</a> on the Apple Dev Forum, more recent versions seem to have issues and falling back to <code>tensorflow-macos</code> version 2.9.0 and <code>tensor flow-metal</code> version 0.5.0 does work with no issues.  Pip will install those versions with the following commands:</p>
+
+<pre><code>pip install tensorflow-macos==2.9.0
+pip install tensorflow-metal==0.5.0
+</code></pre>
+
+<p>Don&rsquo;t forget, you can specify versions using Callisto&rsquo;s package manager right in the package field by adding the version specifier.  Instead of just <code>tensorflow-macos</code>, use <code>tensorflow-macos==2.9.0</code>.</p>
+
+<p>Now we&rsquo;re up and running, let&rsquo;s do some tests!  We want to compare just running on the CPU versus running with the hardware accelerated Metal GPU.  Here&rsquo;s a little bit of code to disable the GPU accelerated device in TensorFlow:</p>
+
+<pre><code class="language-python">import tensorflow as tf
+tf.__version__
+
+disable_gpu = True
+
+if disable_gpu:
+    tf.config.set_visible_devices([], 'GPU')
+
+tf.config.get_visible_devices()
+
+</code></pre>
+
+<p>When <code>disable_gpu</code> is true, you should only see one CPU device in the output.  When not disabling the GPU, you should see both the CPU and GPU in the output.  TensorFlow doesn&rsquo;t deal well with changing the visibility after the library is up and running, so to switch the state of the GPU, remember to restart your Jupyter kernel.</p>
+
+<p>Now we&rsquo;re ready to test!  First I tried this <a href="https://www.tensorflow.org/tutorials/quickstart/beginner">Quickstart for Beginners</a> from the TF website.  Running this example on the CPU, it completed in 7 seconds.  Enabling the GPU, it runs in 42 seconds.  What, what?!  It&rsquo;s slower using the fancy Metal optimized GPU driver?  Yep, turns out that&rsquo;s right.  As noted on Apple&rsquo;s <a href="https://developer.apple.com/metal/tensorflow-plugin/">tensorflow-metal page</a>, the CPU can be faster for small jobs.  Well that&rsquo;s a little disappointing.</p>
+
+<p>Now if we look at Apple&rsquo;s example on that same page, it&rsquo;s got a little more heavy lifting to do.  Running that on my M1 CPU, it runs in just under a half an hour at 29 minutes and 12 seconds.  On the GPU, it blazes through the job in 5 minutes and 10 seconds!  Cutting my run time to <strong>1/6</strong> of the original is defintely a solid improvement.  That kind of performance spike makes all the installation headaches worth it!</p>
+
+<p>With <code>tensorflow-metal</code> on the cusp of a 1.0.0 release, we&rsquo;re excited to see how we can integrate this into our builds and include this out of the box with <a href="https://www.callistoapp.com">Callisto</a>, but until then, these instructions should help shepherd you through a manual install.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+
+		<a href="https://www.bugsandbunnies.org/2023/06/08/christian-and-others.html" class="u-url"><time class="dt-published" datetime="2023-06-08 15:22:54 -0400">Jun 8, 2023</time></a>
+
+		<div class="e-content">
+			 <p>Christian (and others) got a raw deal a lot like the folks behind Tweetbot and Twitterific. As a small dev it&rsquo;s become a <em>huge</em> gamble to create an app based on an API that you do not own. They can (and clearly will) rip the rug out from under you.</p>
+
+<p><a href="https://mastodon.social/@christianselig/110509739563895220">mastodon.social/@christia&hellip;</a></p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+
+		<a href="https://www.bugsandbunnies.org/2023/06/07/so-glad-to.html" class="u-url"><time class="dt-published" datetime="2023-06-07 13:37:17 -0400">Jun 7, 2023</time></a>
+
+		<div class="e-content">
+			 <p>So glad to see the emphasis on testing in the Sync to iCloud with CKSyncEngine session!  More of this please.</p>
+
+<p>#WWDC</p>
+
+<p><a href="https://developer.apple.com/wwdc23/10188">developer.apple.com/wwdc23/10&hellip;</a></p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
 			<h1><a href="https://www.bugsandbunnies.org/2023/06/06/wwdc-keynote-post.html">#WWDC 2023 -- Keynote Post Mortem</a></h1>
 		
 
