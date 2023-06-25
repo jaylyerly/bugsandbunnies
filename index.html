@@ -24,6 +24,78 @@
 	
 	  <div class="h-entry">
 		
+
+		<a href="https://www.bugsandbunnies.org/2023/06/25/furniture-was-rearranged.html" class="u-url"><time class="dt-published" datetime="2023-06-25 19:33:24 -0400">Jun 25, 2023</time></a>
+
+		<div class="e-content">
+			 <p>Furniture was rearranged without authorization. Dragon is not amused! #RabbitsOfMastodon</p>
+
+<p><img src="uploads/2023/image.jpg" width="600" height="565" alt=""></p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://www.bugsandbunnies.org/2023/06/15/callisto-jupyter-and.html">Callisto, Jupyter and Mac Optimized Machine Learning -- Part 2</a></h1>
+		
+
+		<a href="https://www.bugsandbunnies.org/2023/06/15/callisto-jupyter-and.html" class="u-url"><time class="dt-published" datetime="2023-06-15 15:50:21 -0400">Jun 15, 2023</time></a>
+
+		<div class="e-content">
+			 <p>In my last post, I looked at how to install TensorFlow optimized for Apple Silicon.  This time around, I&rsquo;ll explore Apple Silicon support in <a href="https://pytorch.org">PyTorch</a>, another wildly popular library for machine learning.</p>
+
+<p>Setting up <a href="https://www.callistoapp.com">Callisto</a> for PyTorch is easy!  The suggested <code>pip</code> command is</p>
+
+<pre><code>pip install torch torchvision torchaudio
+</code></pre>
+
+<p>And we can do that directly in the <a href="https://www.callistoapp.com">Callisto</a> package manager.  Remember, you can install multiple packages at a time by adding a space separated list, so paste <code>torch torchvision torchaudio</code> into the install field and away we go!</p>
+
+<p>I was looking for little example to run and compare performance of PyTorch on the Apple Silicon CPU with performance on the GPU.  To be quite honest, it was difficult to find a straightforward example.  Fortunately, I ran across <a href="https://github.com/mrdbourke/pytorch-apple-silicon/blob/main/01_cifar10_tinyvgg.ipynb">this notebook</a> by Daniel Bourke.  Daniel works through an example training a model on both the CPU device and the MPS device. MPS is the Metal Performance Shaders backend which uses Apple&rsquo;s Metal framework to harness the power of the M1&rsquo;s graphics hardware.  In this example, he creates a Convolutional Neural Network (CNN) for image classification and compares the performance of the CPU and MPS backends.</p>
+
+<p>The bottom line?  MPS is at least 10x faster than using the CPU.  In Daniel&rsquo;s posted notebook, he saw a speed up of around 10.6.  On my machine, I saw a performance increase of about 11.1x.  The best thing about optimization in PyTorch is that it doesn&rsquo;t require any extra work.  For Mac, the MPS backend is the default so everyone benefits from the performance boost.</p>
+
+<p>In addition to TensorFlow and PyTorch, I checked some other popular Python ML libraries and to see how they took advantage of Apple Silicon.  While some libraries have choosen not to pursue Apple Silicon specific optimization, all of them run correctly in CPU mode.</p>
+
+<ul>
+<li><a href="https://keras.io">Keras</a>
+
+<ul>
+<li><a href="https://keras.io/about/">Built on TensorFlow</a>, Keras should show significant performance improvements when you use an optimized version of TensorFlow</li>
+</ul></li>
+<li><a href="https://docs.fast.ai">FastAI</a>
+
+<ul>
+<li><a href="https://docs.fast.ai/#about-fastai">Built on PyTorch</a>, fastai should show significant performance improvements when you use an optimized version of PyTorch</li>
+</ul></li>
+<li><a href="https://scikit-learn.org">Scikit-learn</a>
+
+<ul>
+<li>To avoid the management overhead and complexity, <a href="https://scikit-learn.org/stable/faq.html#will-you-add-gpu-support">scikit-learn doesn&rsquo;t support GPU acceleration</a></li>
+</ul></li>
+<li><a href="https://numpy.org">Numpy</a>
+
+<ul>
+<li>It maybe be possible to improve performance in numpy by compiling it against an optimized BLAS library which uses Apple&rsquo;s Accelerate framework.  The Accelerate framework provides high performance, vector optimized mathematical functions which are tuned for Apple Silicon.  This is a bit involved and will require more research to see what impact this can have.</li>
+</ul></li>
+<li><a href="https://xgboost.readthedocs.io">XGBoost</a>
+
+<ul>
+<li>XGBoost seems to be focused on GPUs that support CUDA for hardware acceleration and <a href="https://github.com/dmlc/xgboost/issues/6408#issuecomment-1056543760">currently have no plans to support Apple Silicon.</a></li>
+</ul></li>
+<li><a href="https://numba.pydata.org">Numba</a>
+
+<ul>
+<li>Numba also seems to focus only on <a href="https://numba.readthedocs.io/en/stable/user/5minguide.html#gpu-targets">CUDA based GPU acceleration</a></li>
+</ul></li>
+</ul>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
 			<h1><a href="https://www.bugsandbunnies.org/2023/06/12/callisto-jupyter-and.html">Callisto, Jupyter and Mac Optimized Machine Learning </a></h1>
 		
 
@@ -369,7 +441,7 @@ struct TestDriver {
 		<div class="e-content">
 			 <p>Hey!  No cameras! #BunnyButtFriday #RabbitsOfMastodon</p>
 
-<p><img src="uploads/2023/361c425a6b.jpg" width="450" height="600" alt=""></p>
+<p><img src="https://cdn.uploads.micro.blog/47978/2023/361c425a6b.jpg" width="450" height="600" alt=""></p>
 
 		</div>
 	  </div>
@@ -417,7 +489,7 @@ DocumentManager service tried to send a message to a deallocated host proxy
 		<div class="e-content">
 			 <p>Excuse me waiter, there&rsquo;s a bit of hay in my water.  #RabbitsOfMastodon</p>
 
-<p><img src="uploads/2023/e416cb60d2.jpg" width="483" height="600" alt="A big ruby eyed white rabbit looks at the camera, expressing her impatience because there is a large hay cake in her water bowl.  "></p>
+<p><img src="https://cdn.uploads.micro.blog/47978/2023/e416cb60d2.jpg" width="483" height="600" alt="A big ruby eyed white rabbit looks at the camera, expressing her impatience because there is a large hay cake in her water bowl.  "></p>
 
 		</div>
 	  </div>
