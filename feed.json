@@ -7,6 +7,30 @@
 	"items": [
 		
 			{
+				"id": "http://jaylyerly.micro.blog/2023/08/20/itd-be-cool.html",
+				
+				"content_html": "<p>It&rsquo;d be cool if the Apple Card (like the physical card) worked with Find My, so my wallet doesn&rsquo;t have to have a dog tag.</p>\n",
+				"content_text": "It'd be cool if the Apple Card (like the physical card) worked with Find My, so my wallet doesn't have to have a dog tag.\n",
+				"date_published": "2023-08-20T15:51:37-04:00",
+				"url": "https://www.bugsandbunnies.org/2023/08/20/itd-be-cool.html"
+			},
+			{
+				"id": "http://jaylyerly.micro.blog/2023/08/15/that-thing-where.html",
+				
+				"content_html": "<p>That thing where the list of states on a web form is alphabetized by state name, but display text is the two letter abbreviation&hellip; so the list goes NV, NE, NH, NJ, NM, NY, NC, ND.  Who looks at that and is like, yeah, we got it!</p>\n",
+				"content_text": "That thing where the list of states on a web form is alphabetized by state name, but display text is the two letter abbreviation... so the list goes NV, NE, NH, NJ, NM, NY, NC, ND.  Who looks at that and is like, yeah, we got it!\n",
+				"date_published": "2023-08-15T11:11:42-04:00",
+				"url": "https://www.bugsandbunnies.org/2023/08/15/that-thing-where.html"
+			},
+			{
+				"id": "http://jaylyerly.micro.blog/2023/08/10/am-i-reading.html",
+				
+				"content_html": "<p>Am I reading this right?</p>\n\n<p><a href=\"https://techcrunch.com/2023/08/10/disney-announces-another-price-hike-says-ad-supported-tier-is-coming-to-more-countries\">techcrunch.com/2023/08/1&hellip;</a></p>\n\n<p>Disney+ and Hulu are getting big price increases, $3 a month for both services on the ad-free tier.  So if you subscribe to both, it currently costs $26 and that&rsquo;s getting bumped to $32.  <strong>BUT</strong> they&rsquo;re adding a bundle of ad-free Hulu and Disney+ for $20.  So if you subscribe to both (like me!), this is actually going to save $6?</p>\n",
+				"content_text": "Am I reading this right?\n\n[techcrunch.com/2023/08/1...](https://techcrunch.com/2023/08/10/disney-announces-another-price-hike-says-ad-supported-tier-is-coming-to-more-countries)\n\nDisney+ and Hulu are getting big price increases, $3 a month for both services on the ad-free tier.  So if you subscribe to both, it currently costs $26 and that's getting bumped to $32.  __BUT__ they're adding a bundle of ad-free Hulu and Disney+ for $20.  So if you subscribe to both (like me!), this is actually going to save $6?\n",
+				"date_published": "2023-08-10T15:14:04-04:00",
+				"url": "https://www.bugsandbunnies.org/2023/08/10/am-i-reading.html"
+			},
+			{
 				"id": "http://jaylyerly.micro.blog/2023/08/01/office.html",
 				"title": "Office 365",
 				"content_html": "<p>I&rsquo;ve been moving SonicBunny Software from Google Workspace to Office 365 over the last few weeks. I like 365 and it offers a lot of features, but the time it takes to make a change is a bit of a shock. Configuring Exchange and so many things take 5 or 10 minutes to kick in. I guess Google is similar, but with a small installation, it seems like Google was nearly instant where O365 really does take several minutes. But I just hit the kicker &ndash; &lsquo;Please allow <strong>24 to 48 hours</strong> for this to take effect.&rsquo; Yowza!</p>\n",
