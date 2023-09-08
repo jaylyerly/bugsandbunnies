@@ -7,6 +7,30 @@
 	"items": [
 		
 			{
+				"id": "http://jaylyerly.micro.blog/2023/09/08/just-working-on.html",
+				
+				"content_html": "<p>Just working on some recreational Ansible.  As you do.</p>\n",
+				"content_text": "Just working on some recreational Ansible.  As you do.\n",
+				"date_published": "2023-09-08T12:58:58-04:00",
+				"url": "https://www.bugsandbunnies.org/2023/09/08/just-working-on.html"
+			},
+			{
+				"id": "http://jaylyerly.micro.blog/2023/08/23/wait-star-trek.html",
+				
+				"content_html": "<p>Wait, Star Trek: Strange New Worlds s2e10 is the end of the season?</p>\n\n<p>Oh no.</p>\n",
+				"content_text": "Wait, Star Trek: Strange New Worlds s2e10 is the end of the season?\n\nOh no.\n",
+				"date_published": "2023-08-23T17:45:01-04:00",
+				"url": "https://www.bugsandbunnies.org/2023/08/23/wait-star-trek.html"
+			},
+			{
+				"id": "http://jaylyerly.micro.blog/2023/08/23/python-in-excel.html",
+				
+				"content_html": "<p>Python in Excel!  But you have to write your python in the little Excel formula box?  Like getting a Ferrari but having to drive it with an app on your phone.</p>\n\n<p><a href=\"https://techcommunity.microsoft.com/t5/excel-blog/announcing-python-in-excel-combining-the-power-of-python-and-the/ba-p/3893439\">techcommunity.microsoft.com/t5/excel-&hellip;</a></p>\n",
+				"content_text": "Python in Excel!  But you have to write your python in the little Excel formula box?  Like getting a Ferrari but having to drive it with an app on your phone.\n\n[techcommunity.microsoft.com/t5/excel-...](https://techcommunity.microsoft.com/t5/excel-blog/announcing-python-in-excel-combining-the-power-of-python-and-the/ba-p/3893439)\n",
+				"date_published": "2023-08-23T09:01:38-04:00",
+				"url": "https://www.bugsandbunnies.org/2023/08/23/python-in-excel.html"
+			},
+			{
 				"id": "http://jaylyerly.micro.blog/2023/08/20/itd-be-cool.html",
 				
 				"content_html": "<p>It&rsquo;d be cool if the Apple Card (like the physical card) worked with Find My, so my wallet doesn&rsquo;t have to have a dog tag.</p>\n",
