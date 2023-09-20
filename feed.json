@@ -7,6 +7,14 @@
 	"items": [
 		
 			{
+				"id": "http://jaylyerly.micro.blog/2023/09/20/i-have-a.html",
+				
+				"content_html": "<p>I have a project that failed to build under Xcode 15. It links a 3rd party framework written in C++ but the link step fails with unresolved symbols. This <em>classic mode</em> flag for the linker fixed it right up.</p>\n\n<p><a href=\"https://mastodon.social/@jamesthomson/111098206089191122\">mastodon.social/@jamestho&hellip;</a></p>\n",
+				"content_text": "I have a project that failed to build under Xcode 15. It links a 3rd party framework written in C++ but the link step fails with unresolved symbols. This _classic mode_ flag for the linker fixed it right up. \n\n[mastodon.social/@jamestho...](https://mastodon.social/@jamesthomson/111098206089191122)\n",
+				"date_published": "2023-09-20T11:49:38-04:00",
+				"url": "https://www.bugsandbunnies.org/2023/09/20/i-have-a.html"
+			},
+			{
 				"id": "http://jaylyerly.micro.blog/2023/09/08/just-working-on.html",
 				
 				"content_html": "<p>Just working on some recreational Ansible.  As you do.</p>\n",
