@@ -7,6 +7,14 @@
 	"items": [
 		
 			{
+				"id": "http://jaylyerly.micro.blog/2023/10/13/because-the-good.html",
+				
+				"content_html": "<p>Because the good hay is on the bottom.  Apparently.  #RabbitsOfMastodon</p>\n\n<p><img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://www.bugsandbunnies.org/uploads/2023/img-2800.jpeg\" alt=\"A German Lop rabbit completely covered in hay as she digs for the best piece at the bottom of the pile.\" title=\"The best piece.\" border=\"0\" width=\"600\" height=\"497\" /></p>\n",
+				"content_text": "Because the good hay is on the bottom.  Apparently.  #RabbitsOfMastodon\n\n<img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://www.bugsandbunnies.org/uploads/2023/img-2800.jpeg\" alt=\"A German Lop rabbit completely covered in hay as she digs for the best piece at the bottom of the pile.\" title=\"The best piece.\" border=\"0\" width=\"600\" height=\"497\" />\n",
+				"date_published": "2023-10-13T15:36:36-04:00",
+				"url": "https://www.bugsandbunnies.org/2023/10/13/because-the-good.html"
+			},
+			{
 				"id": "http://jaylyerly.micro.blog/2023/09/20/i-have-a.html",
 				
 				"content_html": "<p>I have a project that failed to build under Xcode 15. It links a 3rd party framework written in C++ but the link step fails with unresolved symbols. This <em>classic mode</em> flag for the linker fixed it right up.</p>\n\n<p><a href=\"https://mastodon.social/@jamesthomson/111098206089191122\">mastodon.social/@jamestho&hellip;</a></p>\n",
