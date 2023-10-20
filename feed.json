@@ -7,6 +7,14 @@
 	"items": [
 		
 			{
+				"id": "http://jaylyerly.micro.blog/2023/10/20/til-avcapturedevice-documentation.html",
+				
+				"content_html": "<p>TIL: AVCaptureDevice documentation says the &lsquo;uniqueID&rsquo; is &lsquo;a unique identifier that persists on one system across device connections and disconnections, application restarts, and reboots of the system itself&rsquo;.  Unless you plug that webcam into a different USB port. Then the Mac is all &lsquo;Woah! WTF is this thing?!&rsquo;</p>\n",
+				"content_text": "TIL: AVCaptureDevice documentation says the 'uniqueID' is 'a unique identifier that persists on one system across device connections and disconnections, application restarts, and reboots of the system itself'.  Unless you plug that webcam into a different USB port. Then the Mac is all 'Woah! WTF is this thing?!'\n",
+				"date_published": "2023-10-20T11:34:39-04:00",
+				"url": "https://www.bugsandbunnies.org/2023/10/20/til-avcapturedevice-documentation.html"
+			},
+			{
 				"id": "http://jaylyerly.micro.blog/2023/10/13/because-the-good.html",
 				
 				"content_html": "<p>Because the good hay is on the bottom.  Apparently.  #RabbitsOfMastodon</p>\n\n<p><img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://www.bugsandbunnies.org/uploads/2023/img-2800.jpeg\" alt=\"A German Lop rabbit completely covered in hay as she digs for the best piece at the bottom of the pile.\" title=\"The best piece.\" border=\"0\" width=\"600\" height=\"497\" /></p>\n",
