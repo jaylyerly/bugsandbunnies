@@ -7,6 +7,14 @@
 	"items": [
 		
 			{
+				"id": "http://jaylyerly.micro.blog/2024/01/24/our-first-mac.html",
+				
+				"content_html": "<p>Our first Mac was a purple gumdrop G3 iMac DV with MacOS 9.  We were in grad school at the time and my wife used it to write her thesis in Word.  The iMac was a fantastic little machine, but Word would occasionally center her entire document so there was cursing and crying.  I don&rsquo;t think we ever had anything fancy enough to plug into those FireWire ports.  #MyFirstMac</p>\n",
+				"content_text": "Our first Mac was a purple gumdrop G3 iMac DV with MacOS 9.  We were in grad school at the time and my wife used it to write her thesis in Word.  The iMac was a fantastic little machine, but Word would occasionally center her entire document so there was cursing and crying.  I don't think we ever had anything fancy enough to plug into those FireWire ports.  #MyFirstMac\n",
+				"date_published": "2024-01-24T14:10:56-05:00",
+				"url": "https://www.bugsandbunnies.org/2024/01/24/our-first-mac.html"
+			},
+			{
 				"id": "http://jaylyerly.micro.blog/2024/01/11/its-the-kind.html",
 				
 				"content_html": "<p>It&rsquo;s the kind of day where you have to disable System Integrity Protection.  I&rsquo;m sure this&rsquo;ll all turn out fine.</p>\n",
