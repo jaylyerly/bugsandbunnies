@@ -7,6 +7,14 @@
 	"items": [
 		
 			{
+				"id": "http://jaylyerly.micro.blog/2024/04/27/im-shopping-for.html",
+				
+				"content_html": "<p>I’m shopping for an office desk and thought I’d check staples.com. Open up the app and it demands I download their <em>new</em> app. Okay whatever. New app is literally just a web view for staples.com, complete with the app banner to open the app.  That I’m already in. LOL.</p>\n",
+				"content_text": "I’m shopping for an office desk and thought I’d check staples.com. Open up the app and it demands I download their _new_ app. Okay whatever. New app is literally just a web view for staples.com, complete with the app banner to open the app.  That I’m already in. LOL. \n",
+				"date_published": "2024-04-27T22:14:29-04:00",
+				"url": "https://www.bugsandbunnies.org/2024/04/27/im-shopping-for.html"
+			},
+			{
 				"id": "http://jaylyerly.micro.blog/2024/04/15/last-weeks-google.html",
 				
 				"content_html": "<p>Last week&rsquo;s Google: how to add git submodule</p>\n\n<p>This week&rsquo;s Google: how to remove git submodule</p>\n\n<p>And the circle of life continues&hellip;</p>\n",
