@@ -24,6 +24,25 @@
 	
 	  <div class="h-entry">
 		
+			<h1><a href="https://www.bugsandbunnies.org/2024/05/16/less-branching-better.html">Less branching → Better code</a></h1>
+		
+
+		<a href="https://www.bugsandbunnies.org/2024/05/16/less-branching-better.html" class="u-url"><time class="dt-published" datetime="2024-05-16 10:48:03 -0400">May 16, 2024</time></a>
+
+		<div class="e-content">
+			 <p>Interesting confirmation of a gut feeling I&rsquo;ve had for a while.  With UIKit on iOS, I see a lot of developers write code that updates bits of the user interface as inputs change.  As the code grows, the execution path becomes a convoluted flow chart of branches and conditional updates.  Secondary dependencies often get lost, giving rise to bugs that can take hours to track down.  And then you&rsquo;re not <em>really</em> sure that you didn&rsquo;t break something else with the &ldquo;fix&rdquo;.</p>
+
+<p>But you can ditch all this complexity by just <em>updating the whole interface every time</em>.  When the view opens, update the interface.  When the user checks the box, update the interface.  When the network query returns data, update the interface.  Now you&rsquo;ve got a simple linear method that does all the work which is both less likely to have logical errors and easier to reason about if any errors do occur.  Through no coincidence, this is also how SwiftUI works.</p>
+
+<p><a href="https://justin.searls.co/takes/2024-04-13-09h30m33s/">I’ve written more tests than just about… | justin․searls․co</a>:</p>
+
+<blockquote>... the single most important thing programmers can do to improve their code is to minimize branching (e.g. if statements)... </blockquote>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
 
 		<a href="https://www.bugsandbunnies.org/2024/04/27/im-shopping-for.html" class="u-url"><time class="dt-published" datetime="2024-04-27 22:14:29 -0400">Apr 27, 2024</time></a>
 
