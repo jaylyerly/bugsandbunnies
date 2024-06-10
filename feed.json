@@ -7,6 +7,31 @@
 	"items": [
 		
 			{
+				"id": "http://jaylyerly.micro.blog/2024/06/10/back-in-some.html",
+				
+				"content_html": "<p>Back in 2007, some weird stuff happened and I ended up with a VIP badge for WWDC so I got to see Steve do a keynote up close!</p>\n\n<p><img src=\"uploads/2024/f6f2b09a15.jpg\" width=\"450\" height=\"600\" alt=\"My 2007 WWDC badge with a VIP mini badge. \"></p>\n",
+				"content_text": "Back in 2007, some weird stuff happened and I ended up with a VIP badge for WWDC so I got to see Steve do a keynote up close!  \n\n<img src=\"uploads/2024/f6f2b09a15.jpg\" width=\"450\" height=\"600\" alt=\"My 2007 WWDC badge with a VIP mini badge. \">\n",
+				"date_published": "2024-06-10T12:39:35-04:00",
+				"url": "https://www.bugsandbunnies.org/2024/06/10/back-in-some.html",
+				"tags": ["WWDC","BackInMyDay"]
+			},
+			{
+				"id": "http://jaylyerly.micro.blog/2024/06/07/ugh-burned-again.html",
+				
+				"content_html": "<p>Ugh!  Burned again!  Looks like the HomeKit API is only available on macOS for Catalyst apps!  AFAIK, there aren&rsquo;t even any hoops to jump through to embed Catalyst bits inside an AppKit app.  AppKit inside Catalyst works, but not this way round.  Harumph.</p>\n",
+				"content_text": "Ugh!  Burned again!  Looks like the HomeKit API is only available on macOS for Catalyst apps!  AFAIK, there aren't even any hoops to jump through to embed Catalyst bits inside an AppKit app.  AppKit inside Catalyst works, but not this way round.  Harumph.  \n",
+				"date_published": "2024-06-07T13:19:46-04:00",
+				"url": "https://www.bugsandbunnies.org/2024/06/07/ugh-burned-again.html"
+			},
+			{
+				"id": "http://jaylyerly.micro.blog/2024/06/06/i-havent-used.html",
+				
+				"content_html": "<p>I haven&rsquo;t used the new Netflix app yet, but this auto-expanding tile thing has been terrible in every other app that has tried it.</p>\n\n<p><a href=\"https://9to5mac.com/2024/06/06/ready-for-change-netflix-just-revealed-a-major-redesign-for-its-tv-app/\">Netflix just revealed a major redesign for its TV app - 9to5Mac</a>:</p>\n\n<blockquote>The new look replaces the static tiles containing the shows and movies you want to watch with boxes that extend as soon as your remote lands on them.</blockquote>\n",
+				"content_text": "I haven't used the new Netflix app yet, but this auto-expanding tile thing has been terrible in every other app that has tried it.\n\n<p><a href=\"https://9to5mac.com/2024/06/06/ready-for-change-netflix-just-revealed-a-major-redesign-for-its-tv-app/\">Netflix just revealed a major redesign for its TV app - 9to5Mac</a>:</p>\n\n<blockquote>The new look replaces the static tiles containing the shows and movies you want to watch with boxes that extend as soon as your remote lands on them.</blockquote>\n",
+				"date_published": "2024-06-06T15:07:05-04:00",
+				"url": "https://www.bugsandbunnies.org/2024/06/06/i-havent-used.html"
+			},
+			{
 				"id": "http://jaylyerly.micro.blog/2024/05/31/my-ci-build.html",
 				
 				"content_html": "<p>My CI build failed today because it couldn&rsquo;t find two files.  After 10 minutes thinking I botched a git merge, I discover that no, git is fine.  Xcode decided to create those files in my Downloads folder instead of the project directory.  Thanks for that Xcode.  You&rsquo;re the best!</p>\n",
@@ -127,8 +152,8 @@
 			{
 				"id": "http://jaylyerly.micro.blog/2024/01/31/leaked-image-of.html",
 				
-				"content_html": "<p>Leaked image of Apple&rsquo;s forthcoming &ldquo;Extended Battery&rdquo; for the Vision Pro.</p>\n\n<p><img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://cdn.uploads.micro.blog/47978/2024/52780-posts.article-lg.jpg\" alt=\"Four men with unlicensed nuclear accelerators strapped to their backs.\" title=\"52780-posts.article_lg.jpg\" border=\"0\" width=\"599\" height=\"337\" /></p>\n",
-				"content_text": "Leaked image of Apple's forthcoming \"Extended Battery\" for the Vision Pro.\n\n<img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://cdn.uploads.micro.blog/47978/2024/52780-posts.article-lg.jpg\" alt=\"Four men with unlicensed nuclear accelerators strapped to their backs.\" title=\"52780-posts.article_lg.jpg\" border=\"0\" width=\"599\" height=\"337\" />\n",
+				"content_html": "<p>Leaked image of Apple&rsquo;s forthcoming &ldquo;Extended Battery&rdquo; for the Vision Pro.</p>\n\n<p><img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://www.bugsandbunnies.org/uploads/2024/52780-posts.article-lg.jpg\" alt=\"Four men with unlicensed nuclear accelerators strapped to their backs.\" title=\"52780-posts.article_lg.jpg\" border=\"0\" width=\"599\" height=\"337\" /></p>\n",
+				"content_text": "Leaked image of Apple's forthcoming \"Extended Battery\" for the Vision Pro.\n\n<img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://www.bugsandbunnies.org/uploads/2024/52780-posts.article-lg.jpg\" alt=\"Four men with unlicensed nuclear accelerators strapped to their backs.\" title=\"52780-posts.article_lg.jpg\" border=\"0\" width=\"599\" height=\"337\" />\n",
 				"date_published": "2024-01-31T12:54:54-04:00",
 				"url": "https://www.bugsandbunnies.org/2024/01/31/leaked-image-of.html"
 			},
@@ -151,8 +176,8 @@
 			{
 				"id": "http://jaylyerly.micro.blog/2023/12/08/merry-bunnybuttfriday-to.html",
 				
-				"content_html": "<p>Merry #BunnyButtFriday to all who celebrate!</p>\n\n<p><img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://cdn.uploads.micro.blog/47978/2023/bunny-butt-xmas.jpeg\" alt=\"A brown and black bunny sits loafed up in front of a Christamas tree with her fluffy tail towards the viewer.\" title=\"bunny_butt_xmas.jpeg\" border=\"0\" width=\"450\" height=\"600\" /></p>\n",
-				"content_text": "Merry #BunnyButtFriday to all who celebrate!\n\n<img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://cdn.uploads.micro.blog/47978/2023/bunny-butt-xmas.jpeg\" alt=\"A brown and black bunny sits loafed up in front of a Christamas tree with her fluffy tail towards the viewer.\" title=\"bunny_butt_xmas.jpeg\" border=\"0\" width=\"450\" height=\"600\" />\n",
+				"content_html": "<p>Merry #BunnyButtFriday to all who celebrate!</p>\n\n<p><img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://www.bugsandbunnies.org/uploads/2023/bunny-butt-xmas.jpeg\" alt=\"A brown and black bunny sits loafed up in front of a Christamas tree with her fluffy tail towards the viewer.\" title=\"bunny_butt_xmas.jpeg\" border=\"0\" width=\"450\" height=\"600\" /></p>\n",
+				"content_text": "Merry #BunnyButtFriday to all who celebrate!\n\n<img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://www.bugsandbunnies.org/uploads/2023/bunny-butt-xmas.jpeg\" alt=\"A brown and black bunny sits loafed up in front of a Christamas tree with her fluffy tail towards the viewer.\" title=\"bunny_butt_xmas.jpeg\" border=\"0\" width=\"450\" height=\"600\" />\n",
 				"date_published": "2023-12-08T10:48:41-04:00",
 				"url": "https://www.bugsandbunnies.org/2023/12/08/merry-bunnybuttfriday-to.html"
 			},
@@ -303,8 +328,8 @@
 			{
 				"id": "http://jaylyerly.micro.blog/2023/06/25/furniture-was-rearranged.html",
 				
-				"content_html": "<p>Furniture was rearranged without authorization. Dragon is not amused! #RabbitsOfMastodon</p>\n\n<p><img src=\"https://cdn.uploads.micro.blog/47978/2023/image.jpg\" width=\"600\" height=\"565\" alt=\"\"></p>\n",
-				"content_text": "Furniture was rearranged without authorization. Dragon is not amused! #RabbitsOfMastodon\n\n<img src=\"https://cdn.uploads.micro.blog/47978/2023/image.jpg\" width=\"600\" height=\"565\" alt=\"\">\n",
+				"content_html": "<p>Furniture was rearranged without authorization. Dragon is not amused! #RabbitsOfMastodon</p>\n\n<p><img src=\"uploads/2023/image.jpg\" width=\"600\" height=\"565\" alt=\"\"></p>\n",
+				"content_text": "Furniture was rearranged without authorization. Dragon is not amused! #RabbitsOfMastodon\n\n<img src=\"uploads/2023/image.jpg\" width=\"600\" height=\"565\" alt=\"\">\n",
 				"date_published": "2023-06-25T19:33:24-04:00",
 				"url": "https://www.bugsandbunnies.org/2023/06/25/furniture-was-rearranged.html"
 			},
@@ -419,8 +444,8 @@
 			{
 				"id": "http://jaylyerly.micro.blog/2023/04/14/hey-no-cameras.html",
 				
-				"content_html": "<p>Hey!  No cameras! #BunnyButtFriday #RabbitsOfMastodon</p>\n\n<p><img src=\"https://cdn.uploads.micro.blog/47978/2023/361c425a6b.jpg\" width=\"450\" height=\"600\" alt=\"\"></p>\n",
-				"content_text": "Hey!  No cameras! #BunnyButtFriday #RabbitsOfMastodon \n\n<img src=\"https://cdn.uploads.micro.blog/47978/2023/361c425a6b.jpg\" width=\"450\" height=\"600\" alt=\"\">\n",
+				"content_html": "<p>Hey!  No cameras! #BunnyButtFriday #RabbitsOfMastodon</p>\n\n<p><img src=\"uploads/2023/361c425a6b.jpg\" width=\"450\" height=\"600\" alt=\"\"></p>\n",
+				"content_text": "Hey!  No cameras! #BunnyButtFriday #RabbitsOfMastodon \n\n<img src=\"uploads/2023/361c425a6b.jpg\" width=\"450\" height=\"600\" alt=\"\">\n",
 				"date_published": "2023-04-14T10:41:31-04:00",
 				"url": "https://www.bugsandbunnies.org/2023/04/14/hey-no-cameras.html"
 			},
@@ -436,16 +461,16 @@
 			{
 				"id": "http://jaylyerly.micro.blog/2023/04/11/excuse-me-waiter.html",
 				
-				"content_html": "<p>Excuse me waiter, there&rsquo;s a bit of hay in my water.  #RabbitsOfMastodon</p>\n\n<p><img src=\"https://cdn.uploads.micro.blog/47978/2023/e416cb60d2.jpg\" width=\"483\" height=\"600\" alt=\"A big ruby eyed white rabbit looks at the camera, expressing her impatience because there is a large hay cake in her water bowl.  \"></p>\n",
-				"content_text": "Excuse me waiter, there's a bit of hay in my water.  #RabbitsOfMastodon \n\n<img src=\"https://cdn.uploads.micro.blog/47978/2023/e416cb60d2.jpg\" width=\"483\" height=\"600\" alt=\"A big ruby eyed white rabbit looks at the camera, expressing her impatience because there is a large hay cake in her water bowl.  \">\n",
+				"content_html": "<p>Excuse me waiter, there&rsquo;s a bit of hay in my water.  #RabbitsOfMastodon</p>\n\n<p><img src=\"uploads/2023/e416cb60d2.jpg\" width=\"483\" height=\"600\" alt=\"A big ruby eyed white rabbit looks at the camera, expressing her impatience because there is a large hay cake in her water bowl.  \"></p>\n",
+				"content_text": "Excuse me waiter, there's a bit of hay in my water.  #RabbitsOfMastodon \n\n<img src=\"uploads/2023/e416cb60d2.jpg\" width=\"483\" height=\"600\" alt=\"A big ruby eyed white rabbit looks at the camera, expressing her impatience because there is a large hay cake in her water bowl.  \">\n",
 				"date_published": "2023-04-11T14:33:56-04:00",
 				"url": "https://www.bugsandbunnies.org/2023/04/11/excuse-me-waiter.html"
 			},
 			{
 				"id": "http://jaylyerly.micro.blog/2023/01/07/philosophical-dragon.html",
 				
-				"content_html": "<p>Philosophical Dragon</p>\n\n<p><img src=\"https://cdn.uploads.micro.blog/47978/2023/55d522ccb0.jpg\" width=\"450\" height=\"600\" alt=\"\"></p>\n",
-				"content_text": "Philosophical Dragon \n\n<img src=\"https://cdn.uploads.micro.blog/47978/2023/55d522ccb0.jpg\" width=\"450\" height=\"600\" alt=\"\">\n",
+				"content_html": "<p>Philosophical Dragon</p>\n\n<p><img src=\"uploads/2023/55d522ccb0.jpg\" width=\"450\" height=\"600\" alt=\"\"></p>\n",
+				"content_text": "Philosophical Dragon \n\n<img src=\"uploads/2023/55d522ccb0.jpg\" width=\"450\" height=\"600\" alt=\"\">\n",
 				"date_published": "2023-01-07T15:10:31-04:00",
 				"url": "https://www.bugsandbunnies.org/2023/01/07/philosophical-dragon.html"
 			},
@@ -468,8 +493,8 @@
 			{
 				"id": "http://jaylyerly.micro.blog/2022/09/11/the-thinking-brick.html",
 				
-				"content_html": "<p>The Thinking Brick</p>\n\n<p><img src=\"https://cdn.uploads.micro.blog/47978/2022/6c1f906e1c.jpg\" width=\"600\" height=\"450\" alt=\"\" /></p>\n",
-				"content_text": "The Thinking Brick\n\n<img src=\"https://cdn.uploads.micro.blog/47978/2022/6c1f906e1c.jpg\" width=\"600\" height=\"450\" alt=\"\" />\n",
+				"content_html": "<p>The Thinking Brick</p>\n\n<p><img src=\"uploads/2022/6c1f906e1c.jpg\" width=\"600\" height=\"450\" alt=\"\" /></p>\n",
+				"content_text": "The Thinking Brick\n\n<img src=\"uploads/2022/6c1f906e1c.jpg\" width=\"600\" height=\"450\" alt=\"\" />\n",
 				"date_published": "2022-09-11T20:00:12-04:00",
 				"url": "https://www.bugsandbunnies.org/2022/09/11/the-thinking-brick.html"
 			},
@@ -541,16 +566,16 @@
 			{
 				"id": "http://jaylyerly.micro.blog/2022/08/01/tricorders.html",
 				"title": "Tricorders",
-				"content_html": "<p>When I was a kid, I expected my tricorder would look like this</p>\n\n<p><img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://cdn.uploads.micro.blog/47978/2022/36af399d1b.jpg\" alt=\"Yokogawa AQ1200\" title=\"yokogawa-AQ1200.jpg\" border=\"0\" width=\"599\" height=\"486\" /></p>\n\n<p>But it turned out like this</p>\n\n<p><img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://cdn.uploads.micro.blog/47978/2022/8ceebb569f.jpg\" alt=\"158438 phones review iphone 13 pro review a lesson in refinement image5 ws2nobt8ak\" title=\"158438-phones-review-iphone-13-pro-review-a-lesson-in-refinement-image5-ws2nobt8ak.jpg\" border=\"0\" width=\"600\" height=\"400\" /></p>\n\n<p>Which still seems weird.</p>\n\n<p>Via <a href=\"https://wilwheaton.tumblr.com/post/691173806602141696/vizreef-yokogawa-aq1200-multi-field\">WIL WHEATON dot TUMBLR dot COM - vizreef: Yokogawa // AQ1200 Multi Field...</a>:</p>\n",
-				"content_text": "When I was a kid, I expected my tricorder would look like this\n\n<img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://cdn.uploads.micro.blog/47978/2022/36af399d1b.jpg\" alt=\"Yokogawa AQ1200\" title=\"yokogawa-AQ1200.jpg\" border=\"0\" width=\"599\" height=\"486\" />\n\nBut it turned out like this\n\n<img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://cdn.uploads.micro.blog/47978/2022/8ceebb569f.jpg\" alt=\"158438 phones review iphone 13 pro review a lesson in refinement image5 ws2nobt8ak\" title=\"158438-phones-review-iphone-13-pro-review-a-lesson-in-refinement-image5-ws2nobt8ak.jpg\" border=\"0\" width=\"600\" height=\"400\" />\n\nWhich still seems weird.\n\n<p>Via <a href=\"https://wilwheaton.tumblr.com/post/691173806602141696/vizreef-yokogawa-aq1200-multi-field\">WIL WHEATON dot TUMBLR dot COM - vizreef: Yokogawa // AQ1200 Multi Field...</a>:</p>\n",
+				"content_html": "<p>When I was a kid, I expected my tricorder would look like this</p>\n\n<p><img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://www.bugsandbunnies.org/uploads/2022/36af399d1b.jpg\" alt=\"Yokogawa AQ1200\" title=\"yokogawa-AQ1200.jpg\" border=\"0\" width=\"599\" height=\"486\" /></p>\n\n<p>But it turned out like this</p>\n\n<p><img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://www.bugsandbunnies.org/uploads/2022/8ceebb569f.jpg\" alt=\"158438 phones review iphone 13 pro review a lesson in refinement image5 ws2nobt8ak\" title=\"158438-phones-review-iphone-13-pro-review-a-lesson-in-refinement-image5-ws2nobt8ak.jpg\" border=\"0\" width=\"600\" height=\"400\" /></p>\n\n<p>Which still seems weird.</p>\n\n<p>Via <a href=\"https://wilwheaton.tumblr.com/post/691173806602141696/vizreef-yokogawa-aq1200-multi-field\">WIL WHEATON dot TUMBLR dot COM - vizreef: Yokogawa // AQ1200 Multi Field...</a>:</p>\n",
+				"content_text": "When I was a kid, I expected my tricorder would look like this\n\n<img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://www.bugsandbunnies.org/uploads/2022/36af399d1b.jpg\" alt=\"Yokogawa AQ1200\" title=\"yokogawa-AQ1200.jpg\" border=\"0\" width=\"599\" height=\"486\" />\n\nBut it turned out like this\n\n<img style=\"display:block; margin-left:auto; margin-right:auto;\" src=\"https://www.bugsandbunnies.org/uploads/2022/8ceebb569f.jpg\" alt=\"158438 phones review iphone 13 pro review a lesson in refinement image5 ws2nobt8ak\" title=\"158438-phones-review-iphone-13-pro-review-a-lesson-in-refinement-image5-ws2nobt8ak.jpg\" border=\"0\" width=\"600\" height=\"400\" />\n\nWhich still seems weird.\n\n<p>Via <a href=\"https://wilwheaton.tumblr.com/post/691173806602141696/vizreef-yokogawa-aq1200-multi-field\">WIL WHEATON dot TUMBLR dot COM - vizreef: Yokogawa // AQ1200 Multi Field...</a>:</p>\n",
 				"date_published": "2022-08-01T16:07:19-04:00",
 				"url": "https://www.bugsandbunnies.org/2022/08/01/tricorders.html"
 			},
 			{
 				"id": "http://jaylyerly.micro.blog/2021/08/04/twos-company-get.html",
 				
-				"content_html": "<p>Two’s company. Get lost nerd.</p>\n\n<p><img src=\"https://jaylyerly.micro.blog/uploads/2021/35869d6666.jpg\" width=\"600\" height=\"450\" alt=\"\" /></p>\n",
-				"content_text": "Two’s company. Get lost nerd. \n\n<img src=\"https://jaylyerly.micro.blog/uploads/2021/35869d6666.jpg\" width=\"600\" height=\"450\" alt=\"\" />\n",
+				"content_html": "<p>Two’s company. Get lost nerd.</p>\n\n<p><img src=\"uploads/2021/35869d6666.jpg\" width=\"600\" height=\"450\" alt=\"\" /></p>\n",
+				"content_text": "Two’s company. Get lost nerd. \n\n<img src=\"uploads/2021/35869d6666.jpg\" width=\"600\" height=\"450\" alt=\"\" />\n",
 				"date_published": "2021-08-04T21:42:00-04:00",
 				"url": "https://www.bugsandbunnies.org/2021/08/04/twos-company-get.html",
 				"tags": ["Rabbit"]
