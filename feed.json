@@ -7,6 +7,15 @@
 	"items": [
 		
 			{
+				"id": "http://jaylyerly.micro.blog/2024/07/24/ive-been-using.html",
+				
+				"content_html": "<p>I&rsquo;ve been using the <a href=\"https://github.com/apple/swift-openapi-generator\">Swift OpenAPI Generator</a> to generate an interface to a REST server and it works quite well!  There is soooo much less code!</p>\n\n<p>But of course, we can&rsquo;t have nice things.  The OpenAPI generator is an Xcode plugin and once you enable plugins in Xcode 15, every other build crashes with &ldquo;internal inconsistency error&rdquo;.  Apparently this happens across the board with Xcode plugins.  Supposedly, <a href=\"https://developer.apple.com/documentation/xcode-release-notes/xcode-16-release-notes\">the bug is fixed</a> in Xcode 16, but that won&rsquo;t be production ready for two months.</p>\n",
+				"content_text": "I've been using the [Swift OpenAPI Generator](https://github.com/apple/swift-openapi-generator) to generate an interface to a REST server and it works quite well!  There is soooo much less code!\n\nBut of course, we can't have nice things.  The OpenAPI generator is an Xcode plugin and once you enable plugins in Xcode 15, every other build crashes with \"internal inconsistency error\".  Apparently this happens across the board with Xcode plugins.  Supposedly, [the bug is fixed](https://developer.apple.com/documentation/xcode-release-notes/xcode-16-release-notes) in Xcode 16, but that won't be production ready for two months.  \n",
+				"date_published": "2024-07-24T12:16:12-04:00",
+				"url": "https://www.bugsandbunnies.org/2024/07/24/ive-been-using.html",
+				"tags": ["Swift"]
+			},
+			{
 				"id": "http://jaylyerly.micro.blog/2024/07/10/hoping-in-ios.html",
 				
 				"content_html": "<p>Hoping in iOS 18 that the Weather App radar actually shows rain. 🤞</p>\n",
