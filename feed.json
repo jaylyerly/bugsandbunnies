@@ -7,6 +7,23 @@
 	"items": [
 		
 			{
+				"id": "http://jaylyerly.micro.blog/2024/11/20/todays-the-day.html",
+				
+				"content_html": "<p>Today&rsquo;s the day where you periodically have to go figure out why your Verizon plan suddenly costs $20 more a month.  Once you determine that your old plan (which no longer exists) is inexplicably more expensive, you have to decode the new plans and see which one costs the same as the old plan with mostly(?) the same features, except the 600GB of Verizon Cloud™ storage, whatever that was.</p>\n",
+				"content_text": "Today's the day where you periodically have to go figure out why your Verizon plan suddenly costs $20 more a month.  Once you determine that your old plan (which no longer exists) is inexplicably more expensive, you have to decode the new plans and see which one costs the same as the old plan with mostly(?) the same features, except the 600GB of Verizon Cloud™ storage, whatever that was.\n",
+				"date_published": "2024-11-20T11:39:29-04:00",
+				"url": "https://www.bugsandbunnies.org/2024/11/20/todays-the-day.html"
+			},
+			{
+				"id": "http://jaylyerly.micro.blog/2024/11/13/this-just-in.html",
+				
+				"content_html": "<p>This just in &ndash; Python has switch statements now!  Proceed accordingly.</p>\n",
+				"content_text": "This just in -- Python has switch statements now!  Proceed accordingly. \n",
+				"date_published": "2024-11-13T11:57:16-04:00",
+				"url": "https://www.bugsandbunnies.org/2024/11/13/this-just-in.html",
+				"tags": ["Python"]
+			},
+			{
 				"id": "http://jaylyerly.micro.blog/2024/10/29/like-the-elusive.html",
 				
 				"content_html": "<p>Like the elusive Bigfoot, the black Mac keyboard remains tantalizingly unobtainable. That&rsquo;s right, even after the big USB-C update, Apple does not sell a black Mac keyboard, unless you want a numeric keypad. Black mouse, yes. Black trackpad, definitely. Big black keyboard, no problem. Small black keyboard — whoa there cowboy! That&rsquo;s crazy talk!</p>\n",
