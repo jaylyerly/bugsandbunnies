@@ -7,6 +7,14 @@
 	"items": [
 		
 			{
+				"id": "http://jaylyerly.micro.blog/2024/12/10/big-milestone-today.html",
+				
+				"content_html": "<p>Big milestone today.  Installed my first 10 Gbps network connection in the house!  Wheeeee!</p>\n",
+				"content_text": "Big milestone today.  Installed my first 10 Gbps network connection in the house!  Wheeeee!\n",
+				"date_published": "2024-12-10T17:31:22-04:00",
+				"url": "https://www.bugsandbunnies.org/2024/12/10/big-milestone-today.html"
+			},
+			{
 				"id": "http://jaylyerly.micro.blog/2024/11/20/todays-the-day.html",
 				
 				"content_html": "<p>Today&rsquo;s the day where you periodically have to go figure out why your Verizon plan suddenly costs $20 more a month.  Once you determine that your old plan (which no longer exists) is inexplicably more expensive, you have to decode the new plans and see which one costs the same as the old plan with mostly(?) the same features, except the 600GB of Verizon Cloud™ storage, whatever that was.</p>\n",
