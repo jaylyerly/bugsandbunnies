@@ -24,6 +24,56 @@
 	
 	  <div class="h-entry">
 		
+			<h1><a href="https://www.bugsandbunnies.org/2025/09/23/apples-new-n-networking-chip.html">Apple&#39;s new N1 networking chip in Home devices</a></h1>
+		
+
+		<a href="https://www.bugsandbunnies.org/2025/09/23/apples-new-n-networking-chip.html" class="u-url"><time class="dt-published" datetime="2025-09-23 10:40:24 -0400">Sep 23, 2025</time></a>
+
+		<div class="e-content">
+			 <p>9to5Mac is reporting that
+<a href="https://9to5mac.com/2025/09/08/apples-two-new-home-products-soon-apple-tv-homepod/">Apple has two new Home products launching soon</a>, a new Apple TV 4K and a new HomePod Mini.  The new Apple networking chip, the N1, which recently debuted in the iPhone 17 lineup, is expected to also appear in both these new gizmos.  With the iPhone 17 phones shipping to customers in the last week, folks have been testing the new networking silicon and it looks like a winner.  Apple has been working for <em>many</em> years to eliminate the need for third party chips in their products and with this year&rsquo;s release of the C1 cellular module and this N1 network chip, they&rsquo;re pretty close to that goal.</p>
+
+<p>But what surprises could we see with the new Home devices?  Back in 2021, the second generation AppleTV 4K arrived with support for <a href="https://en.wikipedia.org/wiki/HDMI#ARC">ARC and eARC</a> and the ability to send all audio to a HomePod stereo pair.  In practice, that meant you could get fantastic audio from the AppleTV and from your Xbox.  Stereo HomePods sound <em>pretty good</em>, but this setup stops at two speakers.  For genuinely immersive sound, you just can&rsquo;t beat speakers physically behind you.  Sonos has been doing wireless surround sound systems for a while now, but Apple never seemed willing to go beyond the two speaker configuration to compete with Sonos.</p>
+
+<p>I started to wonder if this was a technical limitation.  Currently, when you pair HomePods with an AppleTV, the HomePods create a dedicated wireless network to the AppleTV.  The HomePods stop using your home&rsquo;s wifi directly and route all traffic through the AppleTV.  The assumption is the dedicated wifi is part of Apple&rsquo;s secret sauce to ensure very low latency pushing audio wirelessly to the speakers.  That&rsquo;s critical for ARC/eARC where audio from an Xbox needs to route through the AppleTV, over the wireless, and come out of the speakers with imperceptible lag compared to what&rsquo;s happening on screen.  It&rsquo;s amazing to me that this is possible at all.  I suspect that whatever magic is involved is limited to two speakers.  Adding two more HomePods as surround channels may be too much to ask of the current hardware.</p>
+
+<p>Cue the shiny new N1 networking chip!  Could the new chip have some optimizations to make this easier?  In touting the iPhone 17 networking upgrades, Apple <a href="https://9to5mac.com/2025/09/22/apple-explains-n1-chips-unique-advantages-in-iphone-17/">called out improvements in Personal Hotspot and AirDrop</a>.  Those are both local ad-hoc sort of networking features, somewhat similar to the way AppleTV talks to HomePods.  There aren&rsquo;t a lot of technical details on the N1 chip, but perhaps they&rsquo;re packing enough power to handle four or even 6 connections for streaming speakers.  I&rsquo;m optimistic we&rsquo;ll finally see a real Apple alternative to a Sonos surround sound system, but I think I&rsquo;ve said the same every year since 2021.  Fourth time is the charm!</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+
+		<a href="https://www.bugsandbunnies.org/2025/06/23/finally-got-a-chance-to.html" class="u-url"><time class="dt-published" datetime="2025-06-23 15:22:44 -0400">Jun 23, 2025</time></a>
+
+		<div class="e-content">
+			 <p>Finally got a chance to install the macOS 26 Tahoe Beta 1 on my laptop&hellip; which finished just as Beta 2 was released.  Whee!</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
+			<h1><a href="https://www.bugsandbunnies.org/2025/06/23/ipados-and-developers.html">iPadOS 26 and Developers</a></h1>
+		
+
+		<a href="https://www.bugsandbunnies.org/2025/06/23/ipados-and-developers.html" class="u-url"><time class="dt-published" datetime="2025-06-23 11:26:42 -0400">Jun 23, 2025</time></a>
+
+		<div class="e-content">
+			 <p>A while ago, I suggested that the best iPad for a developer was the <a href="/2024/05/29/the-best-ipad.html">MacBook Air</a>.  At WWDC 2025, Apple revealed all sorts of power features for the new iPadOS 26 including a whole new windowing mode and support for long running processes like Final Cut exports.  While these are fantastic improvements for some power users, these still don&rsquo;t give developers what they need to make the iPad a great tool for writing code.  Long story short &ndash; keep that MacBook Air around for on-the-go coding for a while longer.</p>
+
+<p>What&rsquo;s still missing that a dev needs?  The knee jerk answer is obviously Xcode.  But why can&rsquo;t they port Xcode?  It&rsquo;s just a glorified text editor, surely less complex than Final Cut and editing ProRes 4K HDR video. The real answer is <code>fork()</code>, the system library function to create a new process.  Folks tend to think about Xcode as a thing that builds apps, but it&rsquo;s really just a graphical frontend that calls command line tools that builds apps.  Most development IDEs work in a similar way.  VS Code, JetBrains IDES and others are just coordinators that invoke command line tools (via <code>fork()</code>) to do the actual work.  This sort of architecture has a <em>long</em> history in computing but is antithetical to the iPadOS security model that bans <code>fork()</code>.  Without the ability to spawn a command line tool, IDEs on iPad remain dead in the water.</p>
+
+<p>At WWDC 25, Apple introduced a new technology called <a href="https://developer.apple.com/videos/play/wwdc2025/346">Containerization</a>, which works like Docker and lets you run Linux containers on your Mac.  Apple&rsquo;s take on running containers focuses on security, performance, and resource management.  That&rsquo;s great and all, but Containerization is a foundational technology &ndash; not something that is immediately useful for everyone, but provides the tools to build things that are.  What if Xcode&rsquo;s toolchain ran in a container, instead of directly on your Mac?  It&rsquo;s a relatively straightforward thing to encapsulate the compiler chain into a container and run it on your source code.  And what if containers could run on iPad?  Now you&rsquo;ve got the potential for an Xcode UI on iPad that talks to a sandboxed container running Linux, where processes can be forked freely while securely sealed off in their container.  Problem solved!</p>
+
+<p>Apple is really good at surprising us with fantastic new features that are built on foundational technologies deployed over the course of years and many OS releases.  It&rsquo;s fun to think about how some of the new low level tech might come together in the future to finally make iPad a viable dev platform.  In the meantime, that M1 MacBook Air is on sale for just $650!  Or $600 for an M4 Mac mini!</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
 
 		<a href="https://www.bugsandbunnies.org/2025/04/25/tomorrow-marks-four-months-using.html" class="u-url"><time class="dt-published" datetime="2025-04-25 20:27:50 -0400">Apr 25, 2025</time></a>
 
